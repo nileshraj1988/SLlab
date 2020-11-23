@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Welcome to NodeJS based Quiz Application</h1>
+
+<h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Q1. Who is the President of India?</h2>
+<div style="text-align: center; font-size: large;">
+<button id="c" onclick="correct()" class="w3-button">Ram Nath Kovind</button>
+<br>
+<br>
+<button id="w" onclick="wrong()" class="w3-button">Narendra Modi</button>
+<br>
+<br>
+<button id="w1" onclick="wrong1()" class="w3-button">Ajit Doval</button>
+<br>
+<br>
+<button id="w2" onclick="wrong2()" class="w3-button">Amit Shah</button>
+</div>
+
+<script>
+    function correct() 
+    {
+      document.getElementById("c").innerHTML = "Correct";
+      document.getElementById("c").style.backgroundColor = 'Green';
+    }
+
+    function wrong() 
+    {
+      document.getElementById("w").innerHTML = "Wrong";
+      document.getElementById("w").style.backgroundColor = 'Red';
+    }
+
+    function wrong1() 
+    {
+      document.getElementById("w1").innerHTML = "Wrong";
+      document.getElementById("w1").style.backgroundColor = 'Red';
+    }
+
+    function wrong2() 
+    {
+      document.getElementById("w2").innerHTML = "Wrong";
+      document.getElementById("w2").style.backgroundColor = 'Red';
+    }
+</script>    
+
+</body>
+</html>
+
